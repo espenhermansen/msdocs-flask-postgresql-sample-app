@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Hotel Create{% endblock %}
+{% block title %}Restaurant Create{% endblock %}
 {% block head %}
     {{ super() }}
     <style>
@@ -10,12 +10,12 @@
   </style>
 {% endblock %}
 {% block content %}
-    <h1>Add New Hotel</h1>
+    <h1>Add New Restaurant</h1>
 
-    <form method="POST" action="{{ url_for('add_hotel') }}">
+    <form method="POST" action="{{ url_for('add_restaurant') }}">
         <div class="mb-3">
-          <label for="hotel_name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="hotel_name" name="hotel_name">
+          <label for="restaurant_name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="restaurant_name" name="restaurant_name">
         </div>
         <div class="mb-3">
           <label for="street_address" class="form-label">Street Address</label>
